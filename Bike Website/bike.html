@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bike World</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #000000, #434343);
+    }
+
+    .bike-card {
+      border-radius: 15px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      transition: 0.4s;
+    }
+
+    .bike-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .bike-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .bike-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .bike-specs i {
+      color: #ffcc00;
+    }
+
+    .btn-custom {
+      background: linear-gradient(45deg, #ff512f, #dd2476);
+      border-radius: 25px;
+      color: white;
+    }
+
+    footer {
+      background: #000;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark">
+  <div class="container">
+    <span class="navbar-brand">
+      <i class="fa-solid fa-motorcycle"></i> Bike World
+    </span>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+  
+
+
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <div class="img-container">
+          <img src="r15.avif">
+        </div>
+        <div class="card-body">
+          <h5>Yamaha R15</h5>
+          <div class="bike-specs">
+            <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹1.8L</span>
+            <span><i class="fa-solid fa-gauge"></i> 155cc</span>
+            <span><i class="fa-solid fa-road"></i> 40 km/l</span>
+            <span><i class="fa-solid fa-bolt"></i> 140 km/h</span>
+          </div>
+          <a href="https://www.yamaha-motor-india.com/yamaha-r15.html" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="Classic350.avif">
+        <div class="card-body">
+          <h5>Classic 350</h5>
+          <div class="bike-specs">
+            <span>₹2.0L</span><span>349cc</span>
+            <span>35 km/l</span><span>120 km/h</span>
+          </div>
+          <a href="https://www.royalenfield.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="duke-200.avif">
+        <div class="card-body">
+          <h5>Duke 200</h5>
+          <div class="bike-specs">
+            <span>₹1.9L</span><span>200cc</span>
+            <span>35 km/l</span><span>135 km/h</span>
+          </div>
+          <a href="https://www.ktmindia.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="pulsar-220.avif">
+        <div class="card-body">
+          <h5>Pulsar 220</h5>
+          <div class="bike-specs">
+            <span>₹1.4L</span><span>220cc</span>
+            <span>40 km/l</span><span>130 km/h</span>
+          </div>
+          <a href="https://www.bajajauto.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="tvs-apache-160.avif">
+        <div class="card-body">
+          <h5>Apache RTR 160</h5>
+          <div class="bike-specs">
+            <span>₹1.3L</span><span>160cc</span>
+            <span>45 km/l</span><span>120 km/h</span>
+          </div>
+          <a href="https://www.tvsmotor.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="shine.avif">
+        <div class="card-body">
+          <h5>Honda Shine</h5>
+          <div class="bike-specs">
+            <span>₹90K</span><span>125cc</span>
+            <span>55 km/l</span><span>100 km/h</span>
+          </div>
+          <a href="https://www.honda2wheelersindia.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="Hero Splendor Plus.avif">
+        <div class="card-body">
+          <h5>Splendor Plus</h5>
+          <div class="bike-specs">
+            <span>₹80K</span><span>100cc</span>
+            <span>65 km/l</span><span>90 km/h</span>
+          </div>
+          <a href="https://www.heromotocorp.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="Suzuki Gixxer.avif">
+        <div class="card-body">
+          <h5>Suzuki Gixxer</h5>
+          <div class="bike-specs">
+            <span>₹1.4L</span><span>155cc</span>
+            <span>45 km/l</span><span>125 km/h</span>
+          </div>
+          <a href="https://www.suzukimotorcycle.co.in/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="Jawa 42.avif">
+        <div class="card-body">
+          <h5>Jawa 42</h5>
+          <div class="bike-specs">
+            <span>₹1.9L</span><span>293cc</span>
+            <span>35 km/l</span><span>130 km/h</span>
+          </div>
+          <a href="https://www.jawamotorcycles.com/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col-md-4">
+      <div class="card bike-card">
+        <img src="BMW G 310 R.jpg">
+        <div class="card-body">
+          <h5>BMW G 310 R</h5>
+          <div class="bike-specs">
+            <span>₹2.9L</span><span>313cc</span>
+            <span>30 km/l</span><span>145 km/h</span>
+          </div>
+          <a href="https://www.bmw-motorrad.in/" target="_blank" class="btn btn-custom w-100 mt-3">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="text-center">
+  <p>© 2026 Bike World| developed by PRIYA</p>
+</footer>
+
+</body>
+</html>
